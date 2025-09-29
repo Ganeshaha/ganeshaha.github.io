@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="x-apple-disable-message-reformatting"> <!-- iOS Mail -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Email Example 1</title>
+
+<!--
+  Keep styles minimal in head. Most CSS should be inline.
+  Responsive media queries are supported by many mobile clients.
+-->
+<style>
+  /* Mobile responsive */
+  @media only screen and (max-width: 480px) {
+    .container { width: 100% !important; padding: 12px !important; }
+    .stack-column { display: block !important; width: 100% !important; max-width: 100% !important; }
+    .hero-text { font-size: 28px !important; line-height: 34px !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f4f5;">
+
+<!-- PREHEADER: this shows in inbox preview. Hide in body. -->
+<div style="display:none; max-height:0px; overflow:hidden; ">
+  Short summary of the email (preheader). Keep it ~35-90 chars.
+</div>
+
+<!-- Email wrapper -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <!--[if mso]>
+      <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td>
+      <![endif]-->
+
+      <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0"
+        style="width:600px; max-width:600px; background:#ffffff; border-radius:8px; overflow:hidden;">
+        <!-- Header / logo -->
+        <tr>
+          <td style="padding:20px; text-align:center; background:#ffffff;">
+            <img src="Images\logo1.png" alt="Logo" width="120" style="display:block; border:0; height:auto;">
+          </td>
+        </tr>
+
+        <!-- Hero -->
+        <tr>
+          <td style="padding:28px;">
+            <h1 class="hero-text" style="margin:0 0 12px; font-size:34px; line-height:40px; font-weight:700; font-family:Arial, Helvetica, sans-serif; color:#111111;">
+                Save on Cleanings, Braces, Eye Exams, Glasses, and more!
+            </h1>
+            <p style="margin:0 0 18px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#555555;">
+                The Dental Vision Savings Plan gives you the care you need to see clearly and smile brightly. Take advantage of the discounts this plan has to offer for your dental and vision needs. Save on most routine and major dental care, as well as eye exams, glasses, contact lenses, LASIK and more.
+            </p>
+
+            <!-- CTA: bulletproof button -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+              <tr>
+                <td align="center">
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
+                    href="https://example.com" style="height:44px;v-text-anchor:middle;width:220px;" arcsize="8%" stroke="f" fillcolor="#0d6efd">
+                    <w:anchorlock/>
+                    <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">
+                      Get Started
+                    </center>
+                  </v:roundrect>
+                  <![endif]-->
+                  <!--[if !mso]> -->
+                  <a href="https://www.careington.com/" target="_blank"
+                    style="display:inline-block; padding:12px 28px; background:#e1251b; color:#ffffff; text-decoration:none; border-radius:6px; font-family:Arial, Helvetica, sans-serif; font-weight:700; font-size:16px;">
+                    Get Started
+                  </a>
+                  <!--<![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Two-column section (stacks on mobile) -->
+        <tr>
+          <td style="padding:18px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="stack-column" width="50%" valign="top" style="padding-right:10px;">
+                  <img src="Images\Smile1.jpg" alt="Feature 1" width="100%" style="display:block; border:0; height:auto;">
+                  <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444; margin:8px 0 0; text-align: center;">
+                    Plans for you and your family.
+                  </p>
+                </td>
+                <td class="stack-column" width="50%" valign="top" style="padding-left:10px;">
+                  <img src="Images\money1.jpg" alt="Feature 2" width="89%" style="display:block; border:0; height:auto;align-self: center;">
+                  <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444; margin:8px 0 0; padding-right: 7%; text-align: center;">
+                  Affordable monthly and annual rates.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:18px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#888888;">
+            <p style="margin:0 0 8px;">You're receiving this because you signed up for updates.</p>
+            <p style="margin:0;">
+              <a href="https://careington.com/preferences" style="color:#0d6efd; text-decoration:none;">Manage preferences</a> •
+              <a href="https://careington.com/unsubscribe" style="color:#0d6efd; text-decoration:none;">Unsubscribe</a>
+            </p>
+            <p style="margin-top:10px; font-size:11px; color:#aaaaaa;">Careington · 7400 Gaylord Pkwy · Friso, TX</p>
+          </td>
+        </tr>
+      </table>
+
+      <!--[if mso]>
+      </td></tr></table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
